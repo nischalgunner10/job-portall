@@ -14,6 +14,11 @@ header {
     align-items: center;
 }
 
+a:link,
+a:visited {
+    text-decoration: none
+}
+
 h1 {
     margin: 0;
 }
@@ -39,29 +44,40 @@ nav a:hover {
 
 #loginBtn,
 #signupBtn {
-    margin-left: 20px;
-    background-color: rgb(69, 92, 218);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid;
-    border-color: white;
     text-decoration: none;
+    padding: 4px 8px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #030207;
+    border: none;
     cursor: pointer;
+    border-radius: 4px;
+
+
 
 
 
 }
+
+
 
 form {
     display: none;
     max-width: 300px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #cdbdbd;
+    border: 1px solid #ccc;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(11, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+#searchForm {
+    display: flex;
+    max-width: 300px;
+}
+
+#searchForm button {}
 
 form label {
     display: block;
@@ -78,6 +94,7 @@ form input {
 }
 
 form button {
+
     background-color: rgb(92, 140, 237);
     color: #2a1111;
     padding: 12px 24px;
@@ -100,7 +117,7 @@ form .close-btn {
     border: none;
     cursor: pointer;
 
-   
+
 }
 
 
@@ -150,8 +167,13 @@ form .close-btn {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    
+
 }
+
+.job-listing button {
+    padding: 4px 4px;
+}
+
 
 
 footer {

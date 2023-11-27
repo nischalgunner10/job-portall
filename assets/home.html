@@ -9,33 +9,35 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-git updated
-something
+
 
 <body>
     <header>
+
         <h1>Job Portal</h1>
         <nav>
+
             <ul style="text-decoration: none; list-style: none;">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact us</a></li>
+
+                <form id="searchForm" action="/search" method="get">
+                    <input type="text" id="searchInput" name="Search" placeholder="Search here">
+                    <button type="submit">Search</button>
+                </form>
             </ul>
-
-
-
-
         </nav>
+
         <div>
             <ul style="text-decoration: none; list-style: none;">
-                <li id="loginBtn">Login</a></li>
-                <li id="signupBtn">Sign Up</a></li>
+                <li id="loginBtn"><a href="#">Login</a></li>
+                <li id="signupBtn"><a href="#">Sign Up</a></li>
             </ul>
 
         </div>
     </header>
-
     <form id="loginForm">
         <button class="close-btn" onclick="closeForm('loginForm')">X</button>
         <label for="username">Username:</label>
@@ -46,6 +48,7 @@ something
 
         <button type="button" onclick="login()">Login</button>
     </form>
+
 
     <form id="signupForm">
         <button class="close-btn" onclick="closeForm('signupForm')">X</button>
@@ -64,6 +67,7 @@ something
         <button type="button" onclick="signup()">Sign Up</button>
     </form>
 
+
     <section class="hero">
         <div class="container">
             <h2>Find Your Dream Job</h2>
@@ -76,26 +80,32 @@ something
         <div class="container">
             <h2>Featured-jobs</h2>
             <div class="job-listing">
+                <img src="img/websoft.png" alt="" width="150px" height="150px">
                 <h3>Software Developer</h3>
                 <p>Websoft Technology</p>
                 <button onclick="applyJob()">Apply Now</button>
+
             </div>
             <div class="job-listing">
+                <img src="img/everest.png" alt="" width="150px" height="150px">
                 <h3>Graphic Designer</h3>
                 <p>Everest Technology</p>
                 <button onclick="applyJob()">Apply Now</button>
             </div>
             <div class="job-listing">
+                <img src="img/xdezo.png" alt="" width="150px" height="150px">
                 <h3>Web Developer</h3>
                 <p>Xdezo</p>
                 <button onclick="applyJob()">Apply Now</button>
             </div>
             <div class="job-listing">
+                <img src="img/pine.jpg" alt="" width="150px" height="150px">
                 <h3>Application Developer</h3>
                 <p>Pine Software</p>
                 <button onclick="applyJob()">Apply Now</button>
             </div>
             <div class="job-listing">
+                <img src="img/xdezo.png" alt="" width="150px" height="150px">
                 <h3>Frontend expert</h3>
                 <p>Xdezo</p> Software</p>
                 <button onclick="applyJob()">Apply Now</button>
